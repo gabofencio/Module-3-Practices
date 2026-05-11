@@ -200,12 +200,6 @@ console.log(colores);
 
 
 
-
-
-
-
-
-
 //P00
 const persona = {
     nombre: 'Ivan',
