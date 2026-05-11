@@ -1,63 +1,63 @@
-// function clasificadorDeEdad() {
-//     let edad = 10;
-//     if (edad > 0 && edad <= 12) {
-//         console.log("Eres un niño");
-//     } else if (edad >= 13 && edad <= 17) {
-//         console.log("Eres un adolescente");
-//     }
-//     else if (edad >= 18 && edad <= 60) {
-//         console.log("Eres un adulto");
-//     }
-//     else {
-//         console.log("adulto mayor");
-//     }
-// }
-// clasificadorDeEdad();
+function clasificadorDeEdad() {
+    let edad = 10;
+    if (edad > 0 && edad <= 12) {
+        console.log("Eres un niño");
+    } else if (edad >= 13 && edad <= 17) {
+        console.log("Eres un adolescente");
+    }
+    else if (edad >= 18 && edad <= 60) {
+        console.log("Eres un adulto");
+    }
+    else {
+        console.log("adulto mayor");
+    }
+}
+clasificadorDeEdad();
 
 
-// function determinadorDeNumeroMayor() {
-//     let n1 = 10;
-//     let n2 = 15;
-//     let n3 = 10;
-//     if (n1 > n3 && n1 > n2) {
-//         console.log("El número mayor es: " + n1);
-//     } else if (n2 > n1 && n2 > n3) {
-//         console.log("El número mayor es: " + n2);
-//     } else {
-//         console.log("El número mayor es: " + n3);
-//     }
-// }
+function determinadorDeNumeroMayor() {
+    let n1 = 10;
+    let n2 = 15;
+    let n3 = 10;
+    if (n1 > n3 && n1 > n2) {
+        console.log("El número mayor es: " + n1);
+    } else if (n2 > n1 && n2 > n3) {
+        console.log("El número mayor es: " + n2);
+    } else {
+        console.log("El número mayor es: " + n3);
+    }
+}
 
 
-// determinadorDeNumeroMayor();
+determinadorDeNumeroMayor();
 
-// function determinadorDeTriangulo() {
-//     let l1 = 10;
-//     let l2 = 10;
-//     let l3 = 10;
-//     if (l1 === l2 && l2 === l3) {
-//         console.log("El triángulo es equilátero");
-//     } else if (l1 === l2 || l2 === l3 || l1 === l3) {
-//         console.log("El triángulo es isósceles");
-//     } else {
-//         console.log("El triángulo es escaleno");
-//     }
-// }
-// determinadorDeTriangulo();
-
-
+function determinadorDeTriangulo() {
+    let l1 = 10;
+    let l2 = 10;
+    let l3 = 10;
+    if (l1 === l2 && l2 === l3) {
+        console.log("El triángulo es equilátero");
+    } else if (l1 === l2 || l2 === l3 || l1 === l3) {
+        console.log("El triángulo es isósceles");
+    } else {
+        console.log("El triángulo es escaleno");
+    }
+}
+determinadorDeTriangulo();
 
 
-// function login(){
-//     let usuario = "admin";
-//     let contraseña = "PesoplumitaJunior";
-//     if (usuario === "admin" && contraseña === "PesoplumitaJunior") {
-//         console.log("Inicio de sesión exitoso");
-//     } else {
-//         console.log("Nombre de usuario o contraseña incorrectos");
-//     }
-// }
-// login();
+
+
+function login(){
+    let usuario = "admin";
+    let contraseña = "PesoplumitaJunior";
+    if (usuario === "admin" && contraseña === "PesoplumitaJunior") {
+        console.log("Inicio de sesión exitoso");
+    } else {
+        console.log("Nombre de usuario o contraseña incorrectos");
+    }
+}
+login();
 
 //clase 4/28
 //algoritmo que imprima numeros pares, del 0 al 20
