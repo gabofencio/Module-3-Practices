@@ -38,7 +38,7 @@ function mostrarCapitulos() {
 }
 
 function informacionDelLibro() {
-    return console.log("Libro titulado: " + libro.titulo + ", escrito por " + libro.autor + ", publicado en el año " + libro.añoPublicacion + ", su estado es: " + libro.estado);
+    return console.log("Libro titulado: " + libro.titulo + ", escrito por " + libro.autor + ", en el año " + libro.añoPublicacion + ", su estado es: " + libro.estado);
 }
 
 crearLibro("la metamorfosis", "Franz Kafka", 1915, "prestado");
