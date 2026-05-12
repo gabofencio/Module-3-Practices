@@ -1,0 +1,162 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #2c2014;
+      color: white;
+    }
+
+    .ico {
+      width: 1em;
+      color: aliceblue;
+    }
+
+    .container {
+      width: 350px;
+      background: #7564509d;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .password-box {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .password-box input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      outline: none;
+      background: #3838378e;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .password-box button {
+      width: 60px;
+      border: none;
+      background: #f38507;
+      color: white;
+      cursor: pointer;
+      border-radius: 0 8px 8px 0;
+      font-weight: bold;
+    }
+
+    .settings {
+      margin-bottom: 20px;
+    }
+
+    .setting {
+      display: flex;
+      justify-content: left;
+      margin: 12px 0;
+    }
+
+    .setting label {
+      padding-left: 1rem;
+    }
+
+    .length-container {
+      margin-bottom: 20px;
+    }
+
+    .length-container label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      cursor: pointer;
+      accent-color: #f38507;
+    }
+
+    input[type="checkbox"] {
+      accent-color: #f38507;
+    }
+
+    .generate-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #f38507;
+      color: #111;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .generate-btn:hover {
+      opacity: .8;
+    }
+
+    .strength {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .weak {
+      color: #ff5c5c;
+    }
+
+    .medium {
+      color: #ffd166;
+    }
+
+    .strong {
+      color: #7cff8f;
+    }
+
+    .semaforo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 10px 5px;
+      border-radius: 10px;
+      align-items: center;
+    }
+
+    .semaforo .signal {
+      width: 45px;
+      height: 45px;
+      background-color: gray;
+      opacity: .2;
+    }
+
+    .signal.weak {
+      background-color: #ff5c5c;
+      opacity: 1;
+    }
+
+    .signal.medium {
+      background-color: #ffd166;
+      opacity: 1;
+    }
+
+    .signal.strong {
+      background-color: #7cff8f;
+      opacity: 1;
+    }
