@@ -2,66 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Password Generator</title>
-  <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Libros</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
 </head>
 
 <body>
-  <div class="container">
-    <h1>Password Generator</h1>
-    <div class="password-box">
-      <input type="text" id="password" readonly>
-      <button id="copyBtn"></button>
+    <div    class="chat-box">
+    <div id="commentSection">
+        <h1>Comenta acerca del nuevo libro de George R.R. Martin: Canción de Hielo y Fuego</h1>
+        <form id="commentForm">
+            <input type="text" id="name-input" placeholder="Tu nombre" required>
+            <textarea id="comment-input" placeholder="Tu comentario" required></textarea>
+            <button type="submit" id="send-button">Enviar</button>
+        </form>
     </div>
-    <div class="length-container">
-      <label>
-        <span>Length</span>
-        <span id="lengthValue"></span>
-      </label>
-      <input type="range" min="8" max="25" value="19" id="lengthSlider">
-    </div>
-    <div class="settings">
-      <div class="setting">
-        <input type="checkbox" id="uppercase" checked>
-        <label>Includes Uppercase Letters</label>
-      </div>
-      <div class="setting">
-        <input type="checkbox" id="lowercase" checked>
-        <label>Includes Lowercase Letters</label>
-
-      </div>
-      <div class="setting">
-        <input type="checkbox" id="numbers" checked>
-        <label>Includes Numbers</label>
-      </div>
-      <div class="setting">
-        <input type="checkbox" id="symbols">
-        <label>Includes Symbols</label>
-      </div>
-    </div>
-    <button class="generate-btn" id="generateBtn">
-      GENERATE
-    </button>
-    <div clas="strength-showcase">
-      <div class="strength" id="strengthText">
-      </div>
-      <div class="semaforo">
-        <span class="signal"></span>
-        <span class="signal"></span>
-        <span class="signal"></span>
-        <span class="signal"></span>
-        <span class="signal"></span>
-        <span class="signal"></span>
-        <span class="signal"></span>
-        <span class="signal"></span>
-        <span class="signal"></span>
-      </div>
-
-    </div>
-  </div>
-  <script src="pass-generator.js"></script>
+    <div id="newCommentParagraph"> </div>
+</div>
+    <script src="comment-box-project.js"></script>
 </body>
 
 </html>

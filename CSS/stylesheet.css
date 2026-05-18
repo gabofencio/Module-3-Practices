@@ -10,7 +10,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #2c2014;
+      background: url('../ASSETS/bg.jpg') no-repeat center center fixed;
       color: white;
     }
 
@@ -103,7 +103,7 @@
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
-      transition: .3s;
+      transition: 300ms;
     }
 
     .generate-btn:hover {
@@ -147,7 +147,7 @@
     }
 
     .signal.weak {
-      background-color: #ff5c5c;
+      background-color: var(--del-color);
       opacity: 1;
     }
 
@@ -159,4 +159,131 @@
     .signal.strong {
       background-color: #7cff8f;
       opacity: 1;
+    }
+
+    .chat-box {
+      width: 600px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, .5);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+      line-height: 1.4;
+      color: #f6d365;
+    }
+
+    /* FORMULARIO */
+
+    #commentForm {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #name-input,
+    #comment-input {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      outline: none;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 16px;
+    }
+
+    #name-input::placeholder,
+    #comment-input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    #comment-input {
+      min-height: 120px;
+      resize: none;
+    }
+
+    #send-button {
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: var(--secondary-color);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 300ms;
+    }
+
+    :root {
+      --primary-color: #f59e0b;
+      --secondary-color: #d97706;
+      --del-color: #bb1515;
+    }
+    #send-button:hover {
+      background: var(--primary-color);
+      transform: scale(1.02);
+    }
+
+    #newCommentParagraph {
+      margin-top: 25px;
+      max-height: 300px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding-right: 8px;
+    }
+
+    #newCommentParagraph::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #newCommentParagraph::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    #newCommentParagraph::-webkit-scrollbar-thumb {
+      background: var(--secondary-color);
+      border-radius: 10px;
+    }
+
+    #newCommentParagraph div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    #newCommentParagraph p {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      border-radius: 14px;
+      border-left: 2px solid var(--primary-color);
+      color: white;
+      word-break: break-word;
+    }
+
+    #newCommentParagraph button {
+      border: none;
+      background: var(--del-color);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      transition: 300ms;
+    }
+
+    #newCommentParagraph button:hover {
+      background: var(--secondary-color);
     }

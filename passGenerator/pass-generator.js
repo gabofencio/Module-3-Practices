@@ -26,6 +26,9 @@ lengthValue.textContent = lengthSliderValue;
 lengthSlider.addEventListener("input", () => {
   lengthValue.textContent = lengthSlider.value;
 });
+
+// required chars -> 10 -> 10/2 -> 5 -> 10/3 -> 3.3 
+// 2
 //Generador de contrase;a
 function generatePassword() {
   let characters = "";
